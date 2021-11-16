@@ -11,9 +11,8 @@ function getWeatherData (){
         
         fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=hourly,minutely&units=metric&appid=${ApiKey}`).then(res => res.json()).then(data => {
         const {temp} = data.current;
-
         //Set DOM Elements from the API
-        temperatureDegree.textContent = temp;
+        temperatureDegree.textContent = Math.round(temp);
         temperatureDescription.textContent = data.current.weather[0].description;
         locationTimezone.textContent = data.timezone;
 
