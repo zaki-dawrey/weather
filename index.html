@@ -7,8 +7,17 @@
     <title>Weather</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="Loading_Screen/style.css">
 </head>
 <body>
+
+    <div class="preload">
+        <img class="airplane" src="/images/airplane.png" alt="airplane">
+        <h3>Loading</h3>
+        <img alt="cloud1" class="cloud1" src="/images/cloud.png">
+        <img alt="cloud2" class="cloud2" src="/images/cloud.png">
+        <img alt="cloud3" class="cloud3" src="/images/cloud.png">
+    </div>
     
     <div class="location">
         <h1 class="location-timezone">Timezone</h1>
@@ -20,6 +29,8 @@
         </div>
         <div class="temperature-description">Cloudy</div>
     </div>
+
+    <script src="/Loading_Screen/app.js"></script>
     <script src="./app.js"></script>
 </body>
 </html>
